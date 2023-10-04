@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Surefire suite" duration-ms="9146" started-at="2023-09-21T06:09:02Z" finished-at="2023-09-21T06:09:11Z">
+  <suite name="Surefire suite" duration-ms="25574" started-at="2023-10-04T05:00:19Z" finished-at="2023-10-04T05:00:45Z">
     <groups>
     </groups>
-    <test name="Surefire test" duration-ms="9146" started-at="2023-09-21T06:09:02Z" finished-at="2023-09-21T06:09:11Z">
+    <test name="Surefire test" duration-ms="25574" started-at="2023-10-04T05:00:19Z" finished-at="2023-10-04T05:00:45Z">
       <class name="com.herokuapp.theinternet.PositiveTest">
-        <test-method status="PASS" signature="loginTest()[pri:0, instance:com.herokuapp.theinternet.PositiveTest@feb3fa]" name="loginTest" duration-ms="9125" started-at="2023-09-21T06:09:02Z" finished-at="2023-09-21T06:09:11Z">
+        <test-method status="PASS" signature="loginTest()[pri:0, instance:com.herokuapp.theinternet.PositiveTest@feb3fa]" name="loginTest" duration-ms="25555" started-at="2023-10-04T05:00:19Z" finished-at="2023-10-04T05:00:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
