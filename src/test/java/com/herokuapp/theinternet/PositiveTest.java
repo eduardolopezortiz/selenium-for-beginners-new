@@ -50,9 +50,9 @@ public class PositiveTest {
 		password.sendKeys("SuperSecretPassword!");
 		sleep(2);
 		
-		//click login button
+		/*click login button*/
 		WebElement logInButton = driver.findElement(By.xpath("//form[@id='login']//i[@class='fa fa-2x fa-sign-in']"));
-		//logInButton.click();
+		logInButton.click();
 		sleep(2);
 		
 		
