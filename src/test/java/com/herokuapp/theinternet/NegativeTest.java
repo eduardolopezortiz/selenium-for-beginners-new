@@ -14,7 +14,7 @@ public class NegativeTest {
 	
 	@Test
 	public void incorrectUsernameTest() {
-		System.out.println("Test started");
+		System.out.println("Starting incorrectUsernameTest");
 		//create driver
 		WebDriver driver = new ChromeDriver();
 		System.out.println("Browser started");
@@ -39,7 +39,7 @@ public class NegativeTest {
 		
 		//enter username
 		WebElement username = driver.findElement(By.xpath("/html//input[@id='username']"));
-		username.sendKeys("tomsmith999");
+		username.sendKeys("tomsmith1995");
 		
 		sleep(2);
 		
@@ -72,10 +72,80 @@ public class NegativeTest {
 		
 		//close browser
 		driver.quit();
-		System.out.println("Negative Test finish");
+		System.out.println("incorrectUsernameTest finish");
 		
 	}
 
+	
+	
+	/*INCORRECT PASSWORD*/
+
+
+	
+	@Test
+	public void incorrectPasswordTest() {
+		System.out.println("starting incorrectPasswordTest");
+		//create driver
+		WebDriver driver = new ChromeDriver();
+		System.out.println("Browser started");
+		sleep(1);
+				
+		//Open Pages
+		String url = "https://the-internet.herokuapp.com/login";//create a variable to store the url of the tet site
+		driver.get(url);
+		sleep(1);
+		
+		
+		
+		//maximize  window
+		driver.manage().window().maximize();
+	
+		
+		sleep(1);
+
+		System.out.println("Page is open");
+		
+		sleep(2);
+		
+		//enter username
+		WebElement username = driver.findElement(By.xpath("/html//input[@id='username']"));
+		username.sendKeys("tomsmith");
+		
+		sleep(2);
+		
+		//enter password
+		WebElement password = driver.findElement(By.xpath("/html//input[@id='password']"));
+		password.sendKeys("SuperSecretPassword!1995");
+		sleep(2);
+		
+		//click login button
+		WebElement logInButton = driver.findElement(By.xpath("//form[@id='login']//i[@class='fa fa-2x fa-sign-in']"));
+		logInButton.click();
+		sleep(1);
+		
+		
+		
+		/*VERIFICATIONS*/
+				
+		
+		//Incorrect username message Your username is invalid!
+		
+		WebElement IncorrectUserMessage = driver.findElement(By.xpath("/html//div[@id='flash']"));//find div of incorect username Message
+		String expectedErrorMessage = "Your password is invalid!";
+		String actualErrorMessage = IncorrectUserMessage.getText();
+
+		Assert.assertTrue(actualErrorMessage.contains(expectedErrorMessage),
+				"Actual message does not contain expected message.\nActual Message: " + actualErrorMessage
+						+ "\nExpected Message: " + expectedErrorMessage);
+
+		sleep(2);		
+		
+		//close browser
+		driver.quit();
+		System.out.println("incorrectPasswordTest finish");
+		
+	}
+	
 	
 	
 	

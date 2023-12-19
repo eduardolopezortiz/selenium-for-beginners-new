@@ -5,7 +5,7 @@
     <classes>
       <class name="com.herokuapp.theinternet.NegativeTest">
         <methods>
-          <include name="incorrectUsernameTest"/>
+          <include name="incorrectPasswordTest"/>
         </methods>
       </class> <!-- com.herokuapp.theinternet.NegativeTest -->
     </classes>
