@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-11-30T05:31:51Z" name="Default suite" finished-at="2023-11-30T05:32:24Z" duration-ms="32034">
+  <suite started-at="2023-12-09T10:32:28Z" name="Default suite" finished-at="2023-12-09T10:33:00Z" duration-ms="32018">
     <groups>
     </groups>
-    <test started-at="2023-11-30T05:31:51Z" name="Default test" finished-at="2023-11-30T05:32:24Z" duration-ms="32034">
-      <class name="com.herokuapp.theinternet.PositiveTest">
-        <test-method signature="loginTest()[pri:0, instance:com.herokuapp.theinternet.PositiveTest@7164ca4c]" started-at="2023-11-30T05:31:52Z" name="loginTest" finished-at="2023-11-30T05:32:23Z" duration-ms="31937" status="PASS">
+    <test started-at="2023-12-09T10:32:28Z" name="Default test" finished-at="2023-12-09T10:33:00Z" duration-ms="32018">
+      <class name="com.herokuapp.theinternet.NegativeTest">
+        <test-method signature="incorrectUsernameTest()[pri:0, instance:com.herokuapp.theinternet.NegativeTest@7164ca4c]" started-at="2023-12-09T10:32:28Z" name="incorrectUsernameTest" finished-at="2023-12-09T10:33:00Z" duration-ms="31926" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginTest -->
-      </class> <!-- com.herokuapp.theinternet.PositiveTest -->
+        </test-method> <!-- incorrectUsernameTest -->
+      </class> <!-- com.herokuapp.theinternet.NegativeTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
