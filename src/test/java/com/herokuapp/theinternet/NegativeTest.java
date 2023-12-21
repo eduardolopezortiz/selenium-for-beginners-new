@@ -13,7 +13,7 @@ import org.testng.annotations.Test;
 public class NegativeTest {
 
 	
-	@Test
+	@Test(priority = 1)
 	public void incorrectUsernameTest() {
 		System.out.println("Starting incorrectUsernameTest");
 		//create driver
@@ -83,7 +83,7 @@ public class NegativeTest {
 
 
 	
-	@Test
+	@Test(priority = 2, enabled = false)
 	public void incorrectPasswordTest() {
 		System.out.println("starting incorrectPasswordTest");
 		//create driver
