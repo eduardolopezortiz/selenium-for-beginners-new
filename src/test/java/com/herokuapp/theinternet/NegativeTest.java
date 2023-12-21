@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -16,7 +17,7 @@ public class NegativeTest {
 	public void incorrectUsernameTest() {
 		System.out.println("Starting incorrectUsernameTest");
 		//create driver
-		WebDriver driver = new ChromeDriver();
+		WebDriver driver = new FirefoxDriver();
 		System.out.println("Browser started");
 		sleep(1);
 				
