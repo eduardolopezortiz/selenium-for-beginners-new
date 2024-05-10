@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-NegativeTestsSuite" class="navigator-link ">
-                    <span>C:\Users\brandon\eclipse-workspace-2023\selenium-for-begginers\src\test\resources\TestSuites\NegativeTests.xml</span>
+                    <span>D:\Repos\selenium-for-beginners-new\src\test\resources\TestSuites\NegativeTests.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -59,7 +59,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="group-NegativeTestsSuite" class="navigator-link ">
-                    <span>0 groups</span>
+                    <span>2 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -135,7 +135,7 @@
         </div> <!-- panel NegativeTestsSuite -->
         <div panel-name="test-xml-NegativeTestsSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\brandon\eclipse-workspace-2023\selenium-for-begginers\src\test\resources\TestSuites\NegativeTests.xml</span>
+            <span class="header-content">D:\Repos\selenium-for-beginners-new\src\test\resources\TestSuites\NegativeTests.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -143,6 +143,11 @@
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;NegativeTestsSuite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;NegativeTests&quot;&gt;
+    &lt;groups&gt;
+      &lt;run&gt;
+        &lt;include name=&quot;smokeTests&quot;/&gt;
+      &lt;/run&gt;
+    &lt;/groups&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.herokuapp.theinternet.NegativeTest&quot;/&gt;
     &lt;/classes&gt;
@@ -168,6 +173,22 @@
             <span class="header-content">Groups for NegativeTestsSuite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">negativeTests</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">incorrectUsernameTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">smokeTests</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">incorrectUsernameTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="times-NegativeTestsSuite" class="panel">
@@ -188,12 +209,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'incorrectUsernameTest')
 data.setCell(0, 2, 'com.herokuapp.theinternet.NegativeTest')
-data.setCell(0, 3, 21761);
+data.setCell(0, 3, 27423);
 window.suiteTableData['NegativeTestsSuite']= { tableData: data, tableDiv: 'times-div-NegativeTestsSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 21 seconds</span>
+              <span class="suite-total-time">Total running time: 27 seconds</span>
               <div id="times-div-NegativeTestsSuite">
               </div> <!-- times-div-NegativeTestsSuite -->
             </div> <!-- times-div -->

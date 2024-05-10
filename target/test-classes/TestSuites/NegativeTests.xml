@@ -4,6 +4,11 @@
   
  
   <test name="NegativeTests">
+	<groups>
+    <run>
+      <include name="smokeTests"/>
+    </run>
+  </groups>
     <classes>
       <class name="com.herokuapp.theinternet.NegativeTest"/>
      
