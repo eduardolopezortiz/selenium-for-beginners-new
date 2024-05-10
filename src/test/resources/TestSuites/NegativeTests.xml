@@ -4,13 +4,19 @@
   
  
   <test name="NegativeTests">
-	<groups>
+	
+	<!--<groups>
     <run>
       <include name="smokeTests"/>
     </run>
-  </groups>
+  </groups>-->
+  
     <classes>
-      <class name="com.herokuapp.theinternet.NegativeTest"/>
+      <class name="com.herokuapp.theinternet.NegativeTest">
+		<methods>
+			<exclude name="incorrectPasswordTest"/>
+		</methods>
+      </class>
      
     </classes>
   </test>

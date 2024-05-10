@@ -143,13 +143,12 @@
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;NegativeTestsSuite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;NegativeTests&quot;&gt;
-    &lt;groups&gt;
-      &lt;run&gt;
-        &lt;include name=&quot;smokeTests&quot;/&gt;
-      &lt;/run&gt;
-    &lt;/groups&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.herokuapp.theinternet.NegativeTest&quot;/&gt;
+      &lt;class name=&quot;com.herokuapp.theinternet.NegativeTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;exclude name=&quot;incorrectPasswordTest&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.herokuapp.theinternet.NegativeTest --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- NegativeTests --&gt;
 &lt;/suite&gt; &lt;!-- NegativeTestsSuite --&gt;
@@ -209,12 +208,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'incorrectUsernameTest')
 data.setCell(0, 2, 'com.herokuapp.theinternet.NegativeTest')
-data.setCell(0, 3, 27423);
+data.setCell(0, 3, 26320);
 window.suiteTableData['NegativeTestsSuite']= { tableData: data, tableDiv: 'times-div-NegativeTestsSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 27 seconds</span>
+              <span class="suite-total-time">Total running time: 26 seconds</span>
               <div id="times-div-NegativeTestsSuite">
               </div> <!-- times-div-NegativeTestsSuite -->
             </div> <!-- times-div -->
